@@ -1,0 +1,154 @@
+@font-face {
+    font-family: link;
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: sublink;
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container__titulos {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 8rem;
+    z-index: 1;
+}
+
+.container__lista {
+    margin: 0;
+    padding: 0;
+    width: 90rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.container__elementoLista {
+    list-style-type: none;
+    padding: 1rem 1.5rem;
+}
+
+.container__link {
+    color: white;
+    text-decoration: none;
+    font-family: link;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.container__sublink {
+    color: white;
+    text-decoration: none;
+    font-family: sublink;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.container__titulos--fondo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-position: center center;
+    z-index: -1;
+}
+
+.container__fondos {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    z-index: -1;
+}
+
+.container__fondo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container__reebook {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/zpump.jpg');
+}
+
+.container__fontVella {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/coach2o.jpg');
+}
+
+.container__revistaCar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/revista-car.jpg');
+}
+
+.container__seidor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/emotional-pulse.jpg');
+}
+
+.container__cervezasAlhambra {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/alhambra.jpg');
+}
+
+.container__danone {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/actimel.jpg');
+}
+
+.container__otsGroup {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/ffuuss.jpg');
+}
+
+.container__dia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/delicious.jpg');
+}
+
+.container__sanitarios {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/roca.jpg');
+}
+
+.container__fox {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20),rgba(0, 0, 0, 0.20)),url('../img/deep-state.jpg');
+}
+
+.active {
+    display: block;
+    opacity: 1;
+    animation: zoom 2s ease-in-out;
+}
+
+.desactive {
+    opacity: 0.4;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.99);
+    }
+
+    to {
+        transform: scale(1.01);
+    }
+}
+
+@media screen and (max-width:853px),(max-height: 853px) {
+    .container__link {
+        font-size: 2.5rem;
+    }
+}
